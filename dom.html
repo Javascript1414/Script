@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="myHeading">Hello</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText(){
+  let heading = document.getElementById("myHeading");
+  heading.innerHTML = "Hello Soumyajit";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p class="myPara">First Paragraph</p>
+<p class="myPara">Second Paragraph</p>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText(){
+  let paragraphs = document.getElementsByClassName("myPara");
+  
+  paragraphs[0].innerHTML = "Hello";
+  paragraphs[1].innerHTML = "Welcome Soumyajit";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>First Div</div>
+<div>Second Div</div>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+function changeText(){
+  let divs = document.getElementsByTagName("div");
+  divs[0].innerHTML = "Hello Sunny";
+}
+</script>
+
+</body>
+</html>

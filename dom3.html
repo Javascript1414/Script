@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+function changeText(){
+let allParas = document.querySelectorAll("p");
+
+allParas[0].innerHTML="Hello";
+allParas[1].innerHTML="Welcome";
+allParas[2].innerHTML="Soumyajit";
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="myHeading">Hello World</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText(){
+  document.getElementById("myHeading").innerText = "Hello Soumyajit";
+}
+</script>
+
+</body>
+</html>

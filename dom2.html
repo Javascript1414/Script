@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>First Div</div>
+<div>Second Div</div>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+function changeText(){
+  let divs = document.getElementsByTagName("div");
+  divs[0].innerHTML = "Hello Soumyajit";
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+function changeText(){
+let firstPara = document.querySelector("p");
+firstPara.innerHTML = "Text Changed";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+function changeText(){
+let allParas = document.querySelectorAll("p");
+
+allParas[0].innerHTML="Hello";
+allParas[1].innerHTML="Welcome";
+allParas[2].innerHTML="Soumyajit";
+}
+</script>
+
+</body>
+</html>

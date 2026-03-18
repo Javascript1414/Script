@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Gray">
+    <h1><marquee>CSA</marquee></h1>
+    <H2><center>TARNARY OPERATOR</center></H2>
+    <br>
+    <script>
+    age=14;
+        let aadhaar = true;
+        let Voter = false;
+        y=(age >=18 && (aadhaar||Voter)) ?"you are eligible to vote":"you are not eligible to vote";
+        document.write(y,"<br>")
+        //output you are not eligible to vote
+
+        age=20;
+        let aadhaarid = true;
+        let Voterid = false;
+        y=(age >=18 && (aadhaar||Voter)) ?"you are eligible to vote":"you are not eligible to vote";
+        document.write(y)
+        //output you are eligible to vote
+
+        
+    </script>
+    
+</body>
+</html>
