@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Encode Example</h2>
+
+<input type="text" id="text">
+
+<button onclick="encodeText()">Encode</button>
+
+<p id="result"></p>
+
+<script>
+function encodeText() {
+    let text = document.getElementById("text").value;
+
+    let encoded = encodeURIComponent(text);
+
+    document.getElementById("result").innerHTML =
+    encoded;
+}
+</script>
+
+</body>
+</html>

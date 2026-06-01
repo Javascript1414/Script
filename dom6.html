@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Element Example</title>
+</head>
+<body>
+
+    <button onclick="addElement()">Add New Element</button>
+
+    <div id="container"></div>
+
+    <script>
+        function addElement() {
+            let p = document.createElement("p");
+            p.innerHTML = "This is a new paragraph.";
+            document.getElementById("container").appendChild(p);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Element Example</title>
+</head>
+<body>
+
+    <p id="myPara">This paragraph will be removed.</p>
+
+    <button onclick="removeElement()">Remove Element</button>
+
+    <script>
+        function removeElement() {
+            document.getElementById("myPara").remove();
+        }
+    </script>
+
+</body>
+</html>

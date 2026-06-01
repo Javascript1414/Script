@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Decode Example</h2>
+
+<input type="text" id="text">
+
+<button onclick="decodeText()">Decode</button>
+
+<p id="result"></p>
+
+<script>
+function decodeText() {
+    let text = document.getElementById("text").value;
+
+    let decoded = decodeURIComponent(text);
+
+    document.getElementById("result").innerHTML =
+    decoded;
+}
+</script>
+
+</body>
+</html>

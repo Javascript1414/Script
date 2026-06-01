@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Name Validation</h2>
+
+Name:
+<input type="text" id="name">
+
+<button onclick="checkName()">Submit</button>
+
+<script>
+function checkName() {
+    let name = document.getElementById("name").value;
+
+    if(name == "") {
+        alert("Name cannot be empty!");
+    }
+    else {
+        alert("Form Submitted Successfully");
+    }
+}
+</script>
+
+</body>
+</html>

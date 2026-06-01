@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Calculator</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator{
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        input, select, button{
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Calculator</h2>
+
+        <input type="number" id="n1" placeholder="First Number"><br>
+
+        <input type="number" id="n2" placeholder="Second Number"><br>
+
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h3 id="answer">Result = </h3>
+    </div>
+
+    <script>
+        function calculate() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            let op = document.getElementById("operator").value;
+            let result;
+
+            if(op == "+")
+                result = a + b;
+            else if(op == "-")
+                result = a - b;
+            else if(op == "*")
+                result = a * b;
+            else if(op == "/")
+                result = a / b;
+
+            document.getElementById("answer").innerHTML =
+                "Result = " + result;
+        }
+    </script>
+
+</body>
+</html>

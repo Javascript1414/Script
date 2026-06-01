@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Mobile Number Validation</h2>
+
+Mobile Number:
+<input type="text" id="mobile">
+
+<button onclick="checkMobile()">Submit</button>
+
+<script>
+function checkMobile() {
+    let mobile = document.getElementById("mobile").value;
+
+    if(mobile.length != 10) {
+        alert("Enter a valid 10-digit mobile number");
+    }
+    else {
+        alert("Mobile Number Valid");
+    }
+}
+</script>
+
+</body>
+</html>
