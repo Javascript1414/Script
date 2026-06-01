@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Error Handling Practical</h2>
+
+<input type="number" id="age" placeholder="Enter Age">
+
+<button onclick="checkAge()">Check</button>
+
+<script>
+function checkAge() {
+
+    try {
+
+        let age =
+        document.getElementById("age").value;
+
+        if(age < 18) {
+            throw "Age must be 18 or above";
+        }
+
+        alert("Eligible");
+
+    }
+
+    catch(error) {
+
+        alert("Error: " + error);
+
+    }
+
+    finally {
+
+        console.log("Validation Completed");
+
+    }
+}
+</script>
+
+</body>
+</html>
